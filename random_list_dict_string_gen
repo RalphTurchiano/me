@@ -2,6 +2,8 @@
 import itertools
 import string
 import random
+zzz = chars=string.ascii_letters + string.digits
+bb = chars = string.printable
 c = input( "Input 'A' for all printable characters or (Hit Enter) for letters and numbers: ").upper()
 if c == "A":
     c = bb
