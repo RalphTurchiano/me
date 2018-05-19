@@ -1,0 +1,35 @@
+### ⚡️ Random List, Dictionary, String Generator Created by Ralph Turchiano ⚡️###
+import itertools
+import string
+import random
+c = input( "Input 'A' for all printable characters or (Hit Enter) for letters and numbers: ").upper()
+if c == "A":
+    c = bb
+else: 
+    c = zzz
+zzz = chars=string.ascii_letters + string.digits
+bb = chars = string.printable
+x = input("Number of Strings: ")
+x = int(x)
+z = input("String Size      : ")
+z = int(z)
+cycle = 0
+zz = []
+vv = zz
+while cycle < x:
+    cycle += 1
+    def RLDS_generator(size=z,chars = c):
+        """ Import the varaiable zz into your code for list
+            Import the varaiable vv into your code for string
+            Import the varaiable ee into your code for dictionary"""
+        return ''.join(random.choice(chars) for _ in range(size))
+    st = RLDS_generator()
+    zz.append(st)
+print("List Variable      🔸: zz ")
+print("▶️  ",zz)
+vv = str(vv).strip('[]')
+print("String variable    🔸: vv ")
+print("▶️  ",vv)
+ee = dict(itertools.zip_longest(*[iter(zz)]*2, fillvalue=""))
+print("Dictionary variable🔸: ee")
+print("▶️ ",ee) 
