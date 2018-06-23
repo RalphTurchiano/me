@@ -24,7 +24,7 @@ def draw_perm_reps(data_1, data_2, func, size=1):
 a = np.array([True] * x_1 + [False] * x_2)
 b = np.array([True] * y_1 + [False] * y_2)
 def frac_tru_a(a, b):
-    frac = np.sum(a) / len(b)
+    frac = np.sum(a) / len(a)
     return frac
 perm_replicates = draw_perm_reps(a, b, frac_tru_a, z_0)
 p = np.sum(perm_replicates <= x_1/z_1) / len(perm_replicates)
